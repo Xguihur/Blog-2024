@@ -1,0 +1,12 @@
+
+.label{
+  width: 100%;
+}
+
+.myLayout{
+  padding: 20px;
+}
+
+.ant-layout .ant-layout-sider{
+  background: #fff;
+}
