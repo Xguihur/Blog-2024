@@ -1,5 +1,5 @@
 import React from 'react';
-import {createBrowserRouter,redirect} from 'react-router-dom'
+import {createBrowserRouter} from 'react-router-dom'
 
 import Label from '../pages/Label/index.jsx'
 import Charts from '../pages/Charts/index.jsx'
@@ -9,11 +9,10 @@ import Home from '../pages/Home/index.jsx'
 const router = createBrowserRouter([
   {
     path: '/',
-    redirect: '/home',
     element: <Label />,
     children: [
       {
-        path: '/home',
+        index: true,
         element: <Home />
       },
       {

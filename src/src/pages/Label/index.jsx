@@ -35,7 +35,7 @@ function Label() {
   const routerChange = (key)=>{
     switch(key){
       case '1':
-        return navigate('/home');
+        return navigate('/');
       case '2':
         return navigate('/upload/blog');
       case '3':  
