@@ -4,7 +4,7 @@ import { InboxOutlined } from '@ant-design/icons';
 import { message, Upload,Button } from 'antd';
 const { Dragger } = Upload;
 
-const url = 'http://8.134.197.161:3000/api';
+const url = `${import.meta.env.VITE_BASE_URL}/api`;
 // const url = 'http://localhost:3000/api';
 
 const onChange=(info, imgUrl,setImgUrl) =>{
@@ -26,7 +26,7 @@ const props = {
   name: 'image',
   multiple: true,
   showUploadList:false,
-  action: 'http://8.134.197.161:3000/upload/other',
+  action: `${import.meta.env.VITE_BASE_URL}/upload/other`,
   // action: 'http://localhost:3000/upload/other',
   onDrop(e) {
     console.log('Dropped files', e.dataTransfer.files);

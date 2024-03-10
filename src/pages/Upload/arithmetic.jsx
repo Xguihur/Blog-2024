@@ -4,7 +4,7 @@ import { InboxOutlined } from '@ant-design/icons';
 import { message, Upload,Button } from 'antd';
 const { Dragger } = Upload;
 
-const url = 'http://8.134.197.161:3000/api';
+const url = `${import.meta.env.VITE_BASE_URL}/api`;
 // const url = 'http://localhost:3000/api';
 
 const onChange=(info, imgUrl,setImgUrl) =>{
@@ -26,17 +26,17 @@ const props = {
   name: 'image',
   multiple: true,
   showUploadList:false,
-  action: 'http://8.134.197.161:3000/upload/blog',
-  // action: 'http://localhost:3000/upload/blog',
+  action: `${import.meta.env.VITE_BASE_URL}/upload/arithmetic`,
+  // action: 'http://localhost:3000/upload/arithmetic',
   onDrop(e) {
     console.log('Dropped files', e.dataTransfer.files);
   },
 };
 
-const Blog = () => {
+const Arithmetic = () => {
   const [imgUrl,setImgUrl] = useState([]);
   return (<div>
-    <h1>博客图片上传</h1>
+    <h1>算法博客图片上传</h1>
     <Dragger {...props} onChange={(info)=>onChange(info,imgUrl,setImgUrl)}>
     <p className="ant-upload-drag-icon">
       <InboxOutlined />
@@ -56,4 +56,4 @@ const Blog = () => {
     </div>
   </div>)
 };
-export default Blog;
+export default Arithmetic;

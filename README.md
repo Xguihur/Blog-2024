@@ -1,11 +1,11 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+本项目使用 react + vite 进行开发，在学习不同框架的过程中进行实践，同时也作为一个自己常用的小工具网站。
 
-Currently, two official plugins are available:
+目前有两个计划的小工具:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 作为自己的图床，实现图片上传功能。为自己在要用到图片的地方提供一个入口，将图片上传到服务器，并且返回对应访问图片的路径。
+- 创建可视化页面，展示自己的博客网站的访问量信息等内容。
 
 ## TodoList
 
@@ -75,3 +75,22 @@ Currently, two official plugins are available:
   },
 ```
 
+---
+
+附上 查看官网 的图片：
+
+![通过查阅路由官网找到路由重定向的解决方案](http://8.134.197.161:3000/api/images/other/image-1710003183016.jpeg)
+
+
+
+---
+
+> 第一次自己感受到调试 开发、本地 环境时切换 URL 很麻烦，然后去了解如何设置 环境变量，并且使用起来。
+>
+> 网上有很好的教程，很快就学会，并且经过验证使用到项目中了
+
+友情链接参考教程：[腾讯云社区的2023年底-针对使用环境变量的一个很好的文章](https://cloud.tencent.com/developer/article/2354445)
+
+* 实际上就是创建三个环境变量文件，并且在里面进行对应的配置
+* 接着使用的话就用：` import.meta.env ` 就可以看到当前环境中设置的环境变量的值
+* 最后还有一个细节是：在 `packge.json`  中可以配置对应的命令，设置 **--mode** 可以让项目以指定的环境去运行，这个还是很实用的！
