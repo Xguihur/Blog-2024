@@ -4,7 +4,7 @@ set -e
 echo "开始推送分支"
 # 生成静态文件
 git add ./
-git commit -m 'deploy: 更新博客'
+git commit -m 'deploy: 更新'
 git push 
 
 echo "推送成功"
