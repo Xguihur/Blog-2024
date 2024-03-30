@@ -1,4 +1,5 @@
-
+// 使用样式
+import './index.css';
 function Home() {
   return (
     <div className="Home">

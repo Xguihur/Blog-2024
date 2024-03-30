@@ -65,6 +65,12 @@ function Label() {
           <Outlet />
         </Content>
       </Layout>
+
+      {/* 备案号悬挂 */}
+      <div className="footer">
+        <a href="https://beian.miit.gov.cn/" target='_blank'>粤ICP备2024216058号</a>
+        <a href="https://beian.miit.gov.cn/" target='_blank'>公安备案号</a>
+      </div>
     </Layout>
     
   );
