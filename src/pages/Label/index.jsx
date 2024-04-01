@@ -3,6 +3,7 @@ import {Outlet,useNavigate} from 'react-router-dom';
 import { HomeOutlined, CloudUploadOutlined, BarChartOutlined } from '@ant-design/icons';
 import { Menu,Layout } from 'antd';
 const { Content, Sider } = Layout;
+import logo from '../../assets/beian_logo.png'
 
 import './index.css';
 
@@ -68,8 +69,9 @@ function Label() {
 
       {/* 备案号悬挂 */}
       <div className="footer">
-        <a href="https://beian.miit.gov.cn/" target='_blank'>粤ICP备2024216058号</a>
-        <a href="https://beian.miit.gov.cn/" target='_blank'>公安备案号</a>
+          <a href="https://beian.miit.gov.cn/" target='_blank'>粤ICP备2024216058号</a>
+          <img className="beian-logo" src={logo} alt="" />
+          <a href="https://beian.mps.gov.cn/#/query/webSearch?code=44020402000314" target='_blank'>粤公网安备44020402000314号</a>
       </div>
     </Layout>
     
